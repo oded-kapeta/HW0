@@ -30,11 +30,23 @@ public class HW0_practice {
         arr[1] = Integer.parseInt(temp[1]);
     }
 
+    /**
+     * gets the sizes and amount of the ships
+     * @param battleships
+     * @return
+     */
+
     public static String getBattleships(String battleships) {
         System.out.println("Enter the battleships size :");
         battleships = scanner.nextLine();
         return battleships;
     }
+
+    /**
+     * splits the sizes and amounts of the ships into an array
+     * @param arr
+     * @param arr2
+     */
     public static void splitBattleships(int arr[][],String arr2[]){
         for (int i = 0 ; i < arr2.length; i++){
             String [] tempArray = arr2[i].split("X");
@@ -44,6 +56,11 @@ public class HW0_practice {
             arr[i][1] = col;
         }
     }
+
+    /**
+     * prints the amount and size of each ship
+     * @param arr
+     */
     public static void print_all_Ships(int arr[][]){
         for (int i = 0 ; i < arr.length;i++){
             System.out.println();
